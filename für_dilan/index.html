@@ -13,10 +13,25 @@
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
 	<script>
-  	function play(){
-       var audio = document.getElementById("audio");
+  	function playDog(){
+       var audio = document.getElementById("audioDog");
        audio.play();
-                 }
+    }
+
+	function playBird(){
+       var audio = document.getElementById("audioBird");
+       audio.play();
+    }
+
+	function playSheep(){
+       var audio = document.getElementById("audioSheep");
+       audio.play();
+    }
+
+	function playDonkey(){
+       var audio = document.getElementById("audioDonkey");
+       audio.play();
+    }
    </script>
 </head>
 <body>
@@ -28,15 +43,15 @@
 		<div class="row">
 		    <div class="col-6">
 					<figure>
-						<img src="img/dog.jpg" height="300" width="400" alt="Static Image" data-alt="img/dog.gif" onclick="play()">
-						<audio id="audio" src="http://www.w3schools.com/html/horse.ogg" ></audio>
+						<img src="img/dog.jpg" height="300" width="400" alt="Static Image" data-alt="img/dog.gif" onclick="playDog()">
+						<audio id="audioDog" src="http://www.w3schools.com/html/horse.ogg" ></audio>
 						<figcaption>Dog - Köpek</figcaption>
 					</figure>
 				</div>
 		    <div class="col-6">
 					<figure>
-						<img src="img/bird.jpg" height="600" width="800" alt="Twitter Share Button" data-alt="img/bird.gif" onclick="play()">
-						<audio id="audio" src="http://www.w3schools.com/html/horse.ogg" ></audio>
+						<img src="img/bird.jpg" height="600" width="800" alt="Twitter Share Button" data-alt="img/bird.gif" onclick="playBird()">
+						<audio id="audioBird" src="http://www.w3schools.com/html/horse.ogg" ></audio>
 						<figcaption>Bird - Kuş</figcaption>
 					</figure>
 				</div>
@@ -44,15 +59,15 @@
 		<div class="row">
 		    <div class="col-6">
 					<figure>
-						<img src="img/sheep.jpg" height="300" width="400" alt="" data-alt="img/sheep.gif" onclick="play()">
-						<audio id="audio" src="http://www.w3schools.com/html/horse.ogg" ></audio>
+						<img src="img/sheep.jpg" height="300" width="400" alt="" data-alt="img/sheep.gif" onclick="playSheep()">
+						<audio id="audioSheep" src="http://www.w3schools.com/html/horse.ogg" ></audio>
 						<figcaption>Sheep - Koyun</figcaption>
 					</figure>
 				</div>
 		    <div class="col-6">
 					<figure>
-						<img src="img/donkey.jpeg" height="300" width="400" alt="" data-alt="img/donkey.gif"  onclick="play()">
-						<audio id="audio" src="http://www.w3schools.com/html/horse.ogg" ></audio>
+						<img src="img/donkey.jpeg" height="300" width="400" alt="" data-alt="img/donkey.gif"  onclick="playDonkey()">
+						<audio id="audioDonkey" src="http://www.w3schools.com/html/horse.ogg" ></audio>
 						<figcaption>Donkey - Eşek</figcaption>
 					</figure>
             </div>
