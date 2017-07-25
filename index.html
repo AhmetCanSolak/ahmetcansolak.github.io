@@ -1,218 +1,194 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Can Solak's Personal Page</title>
+	<meta name="author" content="Ahmet Can Solak" />
+	<meta name="description" content="Personal Page" />
+	<meta name="keywords"  content="fullpage,jquery,typed,bootstrap,information theory,web development,gypsy jazz,angular" />
+	<meta name="Resource-type" content="Document" />
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
-    <title>Can Solak's Personal Page</title>
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/examples.css" />
 
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<style>
+		/* Sections
+		 * --------------------------------------- */
+		#section0 img,
+		#section1 img{
+			margin: 20px 0 0 0px;
+		}
+		#section2 img{
+			margin: 20px 0 0 0;
+		}
+		#section3 img{
+			bottom: 0px;
+			position: absolute;
+			margin-left: -420px;
+		}
+		#section4 img{
+			margin: 20px 0 0 52px;
+		}
+		.intro p{
+			width: 50%;
+			margin: 0 auto;
+			font-size: 1.5em;
+		}
+		.twitter-share-button{
+			position: absolute;
+			z-index: 99;
+			right: 149px;
+			top: 9px;
+		}
+		.introFixedText{
+  			font-weight: 10;
+		}
 
-    <!-- Theme CSS -->
-    <link href="css/grayscale.min.css" rel="stylesheet">
+	</style>
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<!-- Place this tag in your head or just before your close body tag. -->
+	<script async defer src="https://buttons.github.io/buttons.js"></script>
+	<script src="js/typed.js"></script>
+	<script src="js/application.js"></script>
+	<!--<script type="text/javascript" src="examples.js"></script> '#4BBFC3'-->
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionsColor: [ '#1BA3CC', '#7BAABE' , '#ccddff', '#4BBFC3' , 'whitesmoke', '#ccddff'],
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage', 'lastPage'],
+				menu: '#menu',
+				scrollingSpeed: 1000
+			});
+		});
+	</script>
 
 </head>
+<body>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <i class="fa "></i> <span class="light">Can</span> Solak
-                </a>
-            </div>
+<!--<ul id="menu">
+	<li data-menuanchor="firstPage"><a href="#firstPage">Can Solak</a></li>
+	<li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
+	<li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
+	<li data-menuanchor="4thpage"><a href="#4thpage">Fourth slide</a></li>
+</ul>-->
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#download">Interests</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                    <!-- <li>
-                        <a class="page-scroll" href="blog/blog.html">Blog</a>
-                    </li> -->
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
 
-    <!-- Intro Header -->
-    <header class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                      <div>
-                        <h1 style="text-align: center" class="introFixedText"><p>I develop cool </p><span class="typed"></span></h1>
-                      </div>
-                        <a href="#about" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
-                    </div>
-                </div>
+<div id="fullpage">
+	<div class="section " id="section0">
+		<div class="col-md-8 col-md-offset-2">
+            <div>
+            	<p style="text-align: center" class="introFixedText"><p>I develop cool</p> <h2><span class="typed"></span></h1></p>
             </div>
         </div>
-    </header>
+	</div>
+	<div class="section" id="section1">
+		<div class="intro">
+			<h1>About Me</h1>
+            <p>Welcome on board. I'm an Electrical-Electronics Engineering student and an active student member of <a href="http://www.acm.org">ACM</a>. I am located in UTC+3 timezone, and I have a well planned schedule.</p>
+           	<img style="max-width:150px"class="img-circle" src="https://avatars3.githubusercontent.com/u/15677695?v=3&s=460">
+		</div>
+	</div>
+	<div class="section" id="section2">
+		<div class="slide">
+			<div class="intro">
+				<h1>My Interests</h1>
+            	<p>Here are some of my interests that i like to let you know.</p>
+			</div>
+		</div>
 
-    <!-- About Section -->
-    <section id="about" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-              <h2>About Me</h2>
-              <hr>
-              <p>Welcome on board. I'm an Electrical-Electronics Engineering student that understand all side of software developing process. I am an active student member of <a href="http://www.acm.org">ACM</a>.</p>
-              <p>I am located in GMT+2 timezone, and I have a well planned schedule.</p>
-              <div>
-                <img style="max-width:200px"class="ppic img-responsive  img-circle" src="https://avatars3.githubusercontent.com/u/15677695?v=3&s=460">
-              </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Download Section -->
-    <section id="download" class="content-section text-center">
-        <div class="download-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>My Interests</h2>
-                    <p>Here are some of my interests that i like to let you know.</p>
+		<div class="slide">
+			<div class="intro">
+				<img style="height:200px;width:200px;" class="img-circle" src="img/fractal.jpg" alt="porto1">
+                <p>Information Theory</p>
+			</div>
+		</div>
 
-                    <div class="row">
-                      <div class="col-sm-4">
-                         <div class="img-circle">
-                           <img style="height:200px;width:200px;" class="imgM img-responsive img-circle" src="fractal.jpg" alt="porto1">
-                           <h5>Information Theory</h5>
+		<div class="slide">
+			<div class="intro">
+				<img style="height:200px;width:200px;" class="img-circle" src="https://cdn0.iconfinder.com/data/icons/long-shadow-web-icons/512/angular-512.png" alt="porto2">
+				<p>Web Development</p>
+			</div>
+		</div>
 
-                        </div>
-                      </div>
-                      <div class="col-sm-4">
-                         <div class="img-circle">
-                           <img style="height:200px;width:200px;" class="imgM img-responsive img-circle" src="https://cdn0.iconfinder.com/data/icons/long-shadow-web-icons/512/angular-512.png" alt="porto2">
-                           <h5>Web Development</h5>
-                        </div>
-                      </div>
-                      <div class="col-sm-4">
-                         <div class="img-circle">
-                           <img style="height:200px;width:200px;" class="imgM img-responsive  img-circle" src="http://wavescalar.cs.washington.edu/big-example.png" alt="porto3">
-                           <h5>DataFlow Supercomputing</h5>
-                        </div>
-                      </div>
-                    </div>
+		<div class="slide">
+			<div class="intro">
+				<img style="height:200px;width:200px;" class="img-circle" src="http://wavescalar.cs.washington.edu/big-example.png" alt="porto3">
+                <p>DataFlow Supercomputing</p>
+			</div>
+		</div>
 
-                    <div class="row">
-                      <div class="col-sm-4">
-                        <div class="img-circle">
-                           <img style="height:200px;width:200px;" class="imgM img-responsive  img-circle" src="pexels-photo-25370.jpg" alt="porto4">
-                          <h5>Gypsy Jazz</h5>
-                        </div>
-                      </div>
-                      <div class="col-sm-4">
-                        <div class=" img-circle">
-                           <img style="height:200px;width:200px;" class="imgM img-responsive img-circle" src="http://michaelgr.files.wordpress.com/2008/03/godel-escher-bach-geb.jpg" alt="porto5">
-                          <h5>Philosophy</h5>
-                        </div>
-                      </div>
-                      <div class="col-sm-4">
-                        <div class=" img-circle">
-                           <img style="height:200px;width:200px;" class="imgM img-responsive img-circle" src="http://www.jjay.cuny.edu/sites/default/files/page_icons/shutterstock_137316659%20(1).jpg" alt="porto6">
-                          <h5>Psychology</h5>
-                        </div>
-                      </div>
-                    </div>
+		<div class="slide">
+			<div class="intro">
+				<img style="height:200px;width:200px;" class="img-circle" src="img/pexels-photo-25370.jpg" alt="porto4">
+                <p>Gypsy Jazz</p>
+			</div>
+		</div>
 
-                </div>
-            </div>
-        </div>
-    </section>
+		<div class="slide">
+			<div class="intro">
+				<img style="height:200px;width:200px;" class="img-circle" src="http://michaelgr.files.wordpress.com/2008/03/godel-escher-bach-geb.jpg" alt="porto5">
+                <p>Philosophy</p>
+			</div>
+		</div>
 
-    <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact</h2>
-                <p>Feel free to email me to provide feedback on my work or to just say hello!</p>
-                <p><a href="mailto:asolak@acm.org">asolak@acm.org</a>
-                </p>
-                <ul class="list-inline banner-social-buttons">
-                    <!-- <li>
-                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li> -->
-                    <li>
-                        <a href="https://github.com/AhmetCanSolak" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <!-- <li>
-                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-                    </li> -->
-                </ul>
-            </div>
-        </div>
-    </section>
+		<div class="slide">
+			<div class="intro">
+				<img style="height:200px;width:200px;" class="img-circle" src="http://www.jjay.cuny.edu/sites/default/files/page_icons/shutterstock_137316659%20(1).jpg" alt="porto6">
+            	<p>Psychology</p>
+			</div>
+		</div>
+		
+	</div>
 
-    <!-- Map Section -->
-    <div id="mapRSCESA">
-    </div>
+	<div class="section" id="section4">
+		<div class="intro">
+			<h1>About This Page</h1>
+			<p>Typed.js, fullPage.js and Bootstrap is used.</p>
+		</div>
+	</div>
+	
 
-    <!-- Footer -->
-    <footer>
-        <div class="container text-center">
-            <p>Istanbul, Turkey - 2016</p>
-        </div>
-    </footer>
-
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/grayscale.min.js"></script>
-
-    <script src="js/typed.js"></script>
-    <script src="js/application.js"></script>
-
+	<div class="section" id="section3">
+		<div class="intro">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<h1>Contact</h1>
+					<p>Feel free to email me to provide feedback on my work or to just say hello!</p>
+					<p><a href="mailto:asolak@acm.org">asolak@acm.org</a>
+					</p>
+						<!-- <li>
+							<a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+						</li> -->
+						<!-- Place this tag where you want the button to render. -->
+						<a class="github-button" href="https://github.com/AhmetCanSolak" aria-label="Follow @AhmetCanSolak on GitHub">@AhmetCanSolak</a>	
+						<!-- <li>
+							<a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+						</li> -->
+					<br><br>
+					Istanbul, Turkey - 2017
+				</div>
+			</div>
+		</div>
+		<!--<img src="imgs/tablets.png" alt="tablets" />-->
+	</div>
+</div>
 
 </body>
-
 </html>
