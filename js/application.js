@@ -2,7 +2,7 @@ $( document ).ready(function() {
 
   $(function(){
         $(".typed").typed({
-          strings: ["data science projects.", "signal processing tools.", "system administration scripts.", "computer vision softwares.", "lots of stuff, tough this box may go crazy sometimes."],
+          strings: ["computer vision softwares.", "system administration scripts.", "signal processing tools.", "data science projects.", "lots of stuff, tough this box may go crazy sometimes."],
           typeSpeed: 1.1,
           loop: true,
           backDelay: 1700
