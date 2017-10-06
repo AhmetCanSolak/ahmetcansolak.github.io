@@ -1,0 +1,242 @@
+html,
+body {
+  height: 100%;
+}
+
+.btn {
+  border-radius: 25px;
+}
+
+.landing-section {
+  color: white;
+  height: 100vh;
+  width: 100%;
+  background: transparent url('pexels-photo-131723.jpeg') no-repeat center center;
+  background-size: cover;
+  font-family: fantasy;
+  font-variant:small-caps;;
+  font-kerning: auto;
+  font-weight:normal;
+  font-synthesis: style;
+  text-shadow: 1px -1px 1px rgba(87, 83, 252, 1);
+
+}
+.landing-section .navbar-nav > li > a {
+  color: white;
+  font-family: fantasy;
+  font-variant: normal;
+  font-kerning: auto;
+  font-style: oblique;
+}
+.landing-section .navbar-nav > li > a:hover {
+  background-color: transparent;
+}
+@meida (max-width: 768px) {
+  .landing-section .navbar-collapse.in .navbar-nav > li > a {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .landing-section .navbar-collapse.in .navbar-nav > li > a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+.landing-section .icon-bar {
+  background-color: white;
+}
+.landing-section .landing-text-block {
+  margin-top: 20%;
+}
+.landing-section .landing-text-block h1 {
+  font-size: 42px;
+}
+.landing-section .landing-text-block p {
+  font-size: 30px;
+}
+
+.page-content-section {
+  padding: 10px;
+}
+
+  /* change duration value to whatever you like */
+
+    -webkit-transition-duration: 0.8s;
+
+.portfolioFilter a {
+    margin-right: 10px;
+    color:#666;
+    text-decoration:none;
+  }
+
+.portfolioFilter a.current {
+  font-weight:bold;
+}
+
+
+
+.isotope-item {
+z-index: 2;
+}
+.isotope-hidden.isotope-item {
+pointer-events: none;
+z-index: 1;
+}
+.isotope,
+.isotope .isotope-item {
+    -moz-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    transition-property: height, width;
+}
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    transition-property: transform, opacity;
+}
+
+.blogPost {
+	background-color: transparent;
+	font-family: Roboto;
+	font-weight: 400;
+	font-size: 1.6em;
+	line-height: 1.6;
+	color: #666;
+}
+
+
+.blogPost > a {
+	text-decoration: none;
+	color: #3498db;
+}
+
+.blogPost >	a:hover {
+		color: #2980b9;
+	}
+
+
+.blogPost > h2 {
+	line-height: 1.2;
+	margin-bottom: 1.6rem;
+}
+
+.blogPost .wrapper {
+	max-width: 100%;
+	margin: 50px auto;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+/**
+ * Helpers
+ */
+.blogPost .border-tlr-radius {
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+}
+
+.blogPost .text-center { text-align: center; }
+
+.blogPost .radius { border-radius: 2px; }
+
+.blogPost .padding-tb { padding-top: 1.6rem; padding-bottom: 1.6rem;}
+
+.blogPost .shadowDepth0 { box-shadow: 0 1px 3px rgba(0,0,0, 0.12); }
+
+.blogPost .shadowDepth1 {
+   box-shadow:
+  		0 1px 3px rgba(0,0,0, 0.12),
+    	0 1px 2px rgba(0,0,0, 0.24);
+}
+
+
+/**
+ * Card Styles
+ */
+
+.blogPost .card {
+	background-color: #fff;
+	margin-bottom: 1.6rem;
+}
+
+.blogPost .card__padding {
+	padding: 1.6rem;
+}
+
+.blogPost .card__image {
+	min-height: 100px;
+	background-color: #eee;
+}
+.blogPost	.card__image img {
+		width: 100%;
+		max-width: 100%;
+		display: block;
+	}
+
+.blogPost .card__content {
+	position: relative;
+}
+
+/* card meta */
+.blogPost .card__meta time {
+	font-size: 1.5rem;
+	color: #bbb;
+	margin-left: 0.8rem;
+}
+
+/* card article */
+.blogPost .card__article a {
+	text-decoration: none;
+	color: #444;
+	transition: all 0.5s ease;
+}
+.card__article a:hover {
+		color: #2980b9;
+	}
+
+/* card action */
+.card__action {
+	overflow: hidden;
+	padding-right: 1.6rem;
+	padding-left: 1.6rem;
+	padding-bottom: 1.6rem;
+}
+
+.card__author {}
+
+.card__author img,
+.card__author-content {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+.card__author img{
+    max-width: 6%;
+    max-height: 6%;
+		border-radius: 50%;
+		margin-right: 0.6em;
+	}
+
+.card__share {
+	float: right;
+	position: relative;
+	margin-top: -42px;
+}
+
+.card__social {
+	position: absolute;
+	top: 0;
+	right: 0;
+	visibility: hidden;
+	width: 160px;
+	transform: translateZ(0);
+  	transform: translateX(0px);
+  	transition: transform 0.35s ease;
+}
+.card__social--active {
+		visibility: visible;
+		/*z-index: 3;*/
+		transform: translateZ(0);
+ 		transform: translateX(-48px);
+  		transition: transform 0.35s ease;
+	}*/
