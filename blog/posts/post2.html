@@ -46,18 +46,7 @@
 
                                 <p>
 
-<pre class="uk-background-primary"><code class="json">        // Sample Input Dictionary
-        {
-            "property1" : "1",
-            "property2" : {
-                        "a" : "2",
-                        "b" : "3",
-                        "c" : {
-                            "d" : "1",
-                            "e" : "3"
-                        }
-            }
-        }</code></pre>
+<script src="https://gist.github.com/AhmetCanSolak/86803a5b0e061a5d2b32d7bebcd74c17.js"></script>
 
         Last week, I am asked to implement a nested dictionary flattener method in an interview I had. Given a sample input-output dictionary pair,
         interviewer asked me to implement my solution in language of my choice. I usually implement solutions with C++11 in interviews. I immediately
@@ -71,14 +60,7 @@
         this problem. I also added simple corner-case checks during interview to pass all test cases. The <code>flattenDict()</code> directory successfully returns
         the same result as below.
 
-<pre class="uk-background-primary"><code class="json">        // Sample Output Dictionary
-        {
-            "property1" : "1",
-            "property2.a" : "2",
-            "property2.b" : "3",
-            "property2.c.d" : "1",
-            "property2.c.e" : "3"
-        }</code></pre>
+<script src="https://gist.github.com/AhmetCanSolak/d6b23579ad1f90d3ca14c00660d04b57.js"></script>
 
         In case you wonder why I immediately change to Python from C++11, the reason is the ease of using <code>isinstance()</code> method instead of dealing dynamic
         casting of void pointers in C++. There might be a compiler specific solution in C++ for this problem, I might write on it in the following posts. <br>
