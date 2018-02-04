@@ -10,6 +10,7 @@
     <script src="../js/uikit-icons.min.js"></script>
 
     <link rel="stylesheet" href="../css/vs2015.css">
+    <link rel="stylesheet" href="../css/embed-gist.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 </head>
@@ -26,24 +27,24 @@
 
 
         <div class="uk-background-muted">
-           
 
 
-            
+
+
             <div class="uk-section">
 
                     <article class="uk-article">
-                            
+
                                 <h1 class="uk-article-title uk-text-center">Flattening Nested Dictionaries</h1>
-                            
+
                                 <p class="uk-article-meta uk-text-center">28 January 2018
-                            
+
                                 <p class="uk-text-lead"> Ever needed to write your own JSON or XML parser? Probably no. There are ready-to-use implementations in almost all programming languages.
-                                                        I also have not think about it till last week. Then, I am asked to implement a method to flatten nested dictionaries. This led me thoughts on 
-                                                        possible issues while implementing such parser.  
+                                                        I also have not think about it till last week. Then, I am asked to implement a method to flatten nested dictionaries. This led me thoughts on
+                                                        possible issues while implementing such parser.
                                 </p>
-                            
-                                <p>   
+
+                                <p>
 
 <pre class="uk-background-primary"><code class="json">        // Sample Input Dictionary
         {
@@ -58,30 +59,16 @@
             }
         }</code></pre>
 
-        Last week, I am asked to implement a nested dictionary flattener method in an interview I had. Given a sample input-output dictionary pair, 
+        Last week, I am asked to implement a nested dictionary flattener method in an interview I had. Given a sample input-output dictionary pair,
         interviewer asked me to implement my solution in language of my choice. I usually implement solutions with C++11 in interviews. I immediately
-        realized that I would need to deal with <code>map&lt;string,void*&gt;</code>. Then I changed the editor to Python and exploit the recurrence 
+        realized that I would need to deal with <code>map&lt;string,void*&gt;</code>. Then I changed the editor to Python and exploit the recurrence
         and built-in <code>isinstance()</code> method.
 
 
-<pre class="uk-background-primary"><code class="python">        # Python 3.6.5
-        # Function to flatten dictionary
-        def flattenDict(dictionary):
-          results={}
-          for key,value in dictionary.items():
-            if isinstance(value,dict):
-              tempDict = flattenDict(value)
-              for subkey,subvalue in tempDict.items():
-                results[key+"."+subkey]=subvalue
-            else:
-              results[key]=value
-          
-        return results   
+        <script src="https://gist.github.com/AhmetCanSolak/6f44856f0fd591969761f0c68bc75692.js"></script>
 
-</code></pre>
-
-        The implementation above is made by me assuming it is not allowed to manipulate the input dictionary. Otherwise, I would follow a different strategy for 
-        this problem. I also added simple corner-case checks during interview to pass all test cases. The <code>flattenDict()</code> directory successfully returns 
+        The implementation above is made by me assuming it is not allowed to manipulate the input dictionary. Otherwise, I would follow a different strategy for
+        this problem. I also added simple corner-case checks during interview to pass all test cases. The <code>flattenDict()</code> directory successfully returns
         the same result as below.
 
 <pre class="uk-background-primary"><code class="json">        // Sample Output Dictionary
@@ -92,7 +79,7 @@
             "property2.c.d" : "1",
             "property2.c.e" : "3"
         }</code></pre>
-        
+
         In case you wonder why I immediately change to Python from C++11, the reason is the ease of using <code>isinstance()</code> method instead of dealing dynamic
         casting of void pointers in C++. There might be a compiler specific solution in C++ for this problem, I might write on it in the following posts. <br>
         Thank you. <br>
@@ -100,7 +87,7 @@
                                         Please do not hesitate to provide feedback anytime. <br>
                                         <br>
                                         See you on forthcoming posts.</p>
-                            
+
                                 <div class="uk-grid-small uk-child-width-auto" uk-grid>
                                     <div>
                                         <a class=" uk-button-text">Can Solak</a>
@@ -109,7 +96,7 @@
                                 <div>
                                     <a href="../blog.html" ><span class="uk-badge">Return to Homepage</span></a>
                                 </div>
-                            
+
                             </article>
 
             </div>
