@@ -1,3 +1,34 @@
+<!--
+
+
+            uuuuuuuuuuuuuuuuuuuu
+          u" uuuuuuuuuuuuuuuuuu "u
+        u" u$$$$$$$$$$$$$$$$$$$$u "u
+      u" u$$$$$$$$$$$$$$$$$$$$$$$$u "u
+    u" u$$$$$$$$$$$$$$$$$$$$$$$$$$$$u "u
+  u" u$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$u "u
+u" u$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$u "u
+$ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ $
+$ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ $
+$ $$$" ... "$...  ...$" ... "$$$  ... "$$$ $
+$ $$$u `"$$$$$$$  $$$  $$$$$  $$  $$$  $$$ $
+$ $$$$$$uu "$$$$  $$$  $$$$$  $$  """ u$$$ $
+$ $$$""$$$  $$$$  $$$u "$$$" u$$  $$$$$$$$ $
+$ $$$$....,$$$$$..$$$$$....,$$$$..$$$$$$$$ $
+$ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ $
+"u "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$" u"
+  "u "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$" u"
+    "u "$$$$$$$$$$$$$$$$$$$$$$$$$$$$" u"
+      "u "$$$$$$$$$$$$$$$$$$$$$$$$" u"
+        "u "$$$$$$$$$$$$$$$$$$$$" u"
+          "u """""""""""""""""" u"
+            """"""""""""""""""""
+
+STOP viewing my source code :D
+
+ -->
+
+
 <!DOCTYPE html>
 <html>
 
@@ -34,55 +65,34 @@
 
                     <article class="uk-article">
 
-                                <h1 class="uk-article-title uk-text-center">Flattening Nested Dictionaries</h1>
+                                <h1 class="uk-article-title uk-text-center">A Small Sunday Game</h1>
 
-                                <p class="uk-article-meta uk-text-center">28 January 2018
+                                <p class="uk-article-meta uk-text-center">5 February 2018
 
-                                <p class="uk-text-lead"> Ever needed to write your own JSON or XML parser? Probably no. There are ready-to-use implementations in almost all programming languages.
-                                                        I also have not think about it till last week. Then, I am asked to implement a method to flatten nested dictionaries. This led me thoughts on
-                                                        possible issues while implementing such parser.
+                                <p class="uk-text-lead"> Yesterday was the last day before new spring semester. After breakfast, I suddenly realized have some spare time after a long while.
+                                                         My friends were still not arrived to campus, so I started to looking for a litte programming project to make my day more fun. Found a
+                                                         calm place with a nice view and sit. Then, Pygame came to my mind and jumped into implementing a small simple Tic-Tac-Toe game with that.
                                 </p>
 
                                 <p>
 
-<pre class="uk-background-primary"><code class="json">        // Sample Input Dictionary
-        {
-            "property1" : "1",
-            "property2" : {
-                        "a" : "2",
-                        "b" : "3",
-                        "c" : {
-                            "d" : "1",
-                            "e" : "3"
-                        }
-            }
-        }</code></pre>
+                                <img src="../images/post3-view.jpg" alt="" />
 
-        Last week, I am asked to implement a nested dictionary flattener method in an interview I had. Given a sample input-output dictionary pair,
-        interviewer asked me to implement my solution in language of my choice. I usually implement solutions with C++11 in interviews. I immediately
-        realized that I would need to deal with <code>map&lt;string,void*&gt;</code>. Then I changed the editor to Python and exploit the recurrence
-        and built-in <code>isinstance()</code> method.
+                                I had not used Pygame till yesterday but, thankfully, it is easy to learn and use. With the help of several Stack Overflow answers upon simple Google queries, I was
+                                able to finish a simple 3x3 demo implementation in a couple of hours.
 
-        <script src="https://gist.github.com/AhmetCanSolak/6f44856f0fd591969761f0c68bc75692.js"></script>
+                                <br>
+                                <h3><em>References</em></h3>
+                                <ul>
+                                  <li>1 - link</li>
+                                  <li>1 - link</li>
+                                  <li>1 - link</li>
+                                  <li>1 - link</li>
+                                </ul>
 
-
-        The implementation above is made by me assuming it is not allowed to manipulate the input dictionary. Otherwise, I would follow a different strategy for
-        this problem. I also added simple corner-case checks during interview to pass all test cases. The <code>flattenDict()</code> directory successfully returns
-        the same result as below.
-
-<pre class="uk-background-primary"><code class="json">        // Sample Output Dictionary
-        {
-            "property1" : "1",
-            "property2.a" : "2",
-            "property2.b" : "3",
-            "property2.c.d" : "1",
-            "property2.c.e" : "3"
-        }</code></pre>
-
-        In case you wonder why I immediately change to Python from C++11, the reason is the ease of using <code>isinstance()</code> method instead of dealing dynamic
-        casting of void pointers in C++. There might be a compiler specific solution in C++ for this problem, I might write on it in the following posts. <br>
-        Thank you. <br>
-        <br>
+                                Overall, I enjoyed using Pygame much. Since implementing small simple games is a great way to practise programming, I am planning to have some other games and blog posts on them. <br>
+                                Thank you. <br>
+                                <br>
                                         Please do not hesitate to provide feedback anytime. <br>
                                         <br>
                                         See you on forthcoming posts.</p>
