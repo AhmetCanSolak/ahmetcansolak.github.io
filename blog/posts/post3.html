@@ -33,7 +33,7 @@ STOP viewing my source code :D
 <html>
 
 <head>
-    <title>Hello World Post, Can Solak's Personal Blog</title>
+    <title>A Small Sunday Game, Can Solak's Personal Blog</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/uikit.min.css" />
@@ -69,26 +69,30 @@ STOP viewing my source code :D
 
                                 <p class="uk-article-meta uk-text-center">5 February 2018
 
-                                <p class="uk-text-lead"> Yesterday was the last day before new spring semester. After breakfast, I suddenly realized have some spare time after a long while.
+                                <p class="uk-text-lead"> Yesterday was the last day before new spring semester. After breakfast, I suddenly realized that I have some spare time after a long while.
                                                          My friends were still not arrived to campus, so I started to looking for a litte programming project to make my day more fun. Found a
-                                                         calm place with a nice view and sit. Then, Pygame came to my mind and jumped into implementing a small simple Tic-Tac-Toe game with that.
+                                                         calm place with a nice view and sit. Then, Pygame came to my mind and jumped into implementing a small simple Tic-Tac-Toe game.
                                 </p>
 
                                 <p>
 
                                 <img src="../images/post3-view.jpg" alt="" />
 
-                                I had not used Pygame till yesterday but, thankfully, it is easy to learn and use. With the help of several Stack Overflow answers upon simple Google queries, I was
-                                able to finish a simple 3x3 demo implementation in a couple of hours.
+                                I had not used Pygame till yesterday but, thankfully, it is easy to learn and use. With the help of several <a href="https://stackoverflow.com/questions/tagged/pygame">Stack Overflow answers</a> upon simple queries, I was
+                                able to finish a simple 3x3 demo implementation in a couple of hours. In here, I will briefly describe my implementation process. Hope this post can encourage you to implement small games too. First I started with implementing
+                                a slot class to model each cell in the game grid as you can see:
+                                
+                                <script src="http://gist-it.appspot.com/http://github.com/AhmetCanSolak/small-simple-games/blob/master/tic_tac_toe/helperLib.py?slice=121:139&footer=no"></script>
+                                <br>
+                                
+                                Then I go for a simple window and main game loop. You can see its final version as:
+                                <script src="http://gist-it.appspot.com/http://github.com/AhmetCanSolak/small-simple-games/blob/master/tic_tac_toe/main.py?footer=no"></script>
 
                                 <br>
-                                <h3><em>References</em></h3>
-                                <ul>
-                                  <li>1 - link</li>
-                                  <li>1 - link</li>
-                                  <li>1 - link</li>
-                                  <li>1 - link</li>
-                                </ul>
+                                Finally, I implement a board class the handle rest of the functionality. There is only single point in implementation of Board class that I am not comfortable with, it is the check for winning condition. Here you can see my not
+                                so pleasing but quick implementation: 
+                                <script src="http://gist-it.appspot.com/http://github.com/AhmetCanSolak/small-simple-games/blob/master/tic_tac_toe/helperLib.py?slice=38:83&footer=no"></script>
+                                <br>
 
                                 Overall, I enjoyed using Pygame much. Since implementing small simple games is a great way to practise programming, I am planning to have some other games and blog posts on them. <br>
                                 Thank you. <br>
