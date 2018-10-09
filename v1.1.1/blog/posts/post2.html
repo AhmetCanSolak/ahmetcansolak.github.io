@@ -1,0 +1,142 @@
+<!--
+
+
+            uuuuuuuuuuuuuuuuuuuu
+          u" uuuuuuuuuuuuuuuuuu "u
+        u" u$$$$$$$$$$$$$$$$$$$$u "u
+      u" u$$$$$$$$$$$$$$$$$$$$$$$$u "u
+    u" u$$$$$$$$$$$$$$$$$$$$$$$$$$$$u "u
+  u" u$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$u "u
+u" u$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$u "u
+$ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ $
+$ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ $
+$ $$$" ... "$...  ...$" ... "$$$  ... "$$$ $
+$ $$$u `"$$$$$$$  $$$  $$$$$  $$  $$$  $$$ $
+$ $$$$$$uu "$$$$  $$$  $$$$$  $$  """ u$$$ $
+$ $$$""$$$  $$$$  $$$u "$$$" u$$  $$$$$$$$ $
+$ $$$$....,$$$$$..$$$$$....,$$$$..$$$$$$$$ $
+$ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ $
+"u "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$" u"
+  "u "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$" u"
+    "u "$$$$$$$$$$$$$$$$$$$$$$$$$$$$" u"
+      "u "$$$$$$$$$$$$$$$$$$$$$$$$" u"
+        "u "$$$$$$$$$$$$$$$$$$$$" u"
+          "u """""""""""""""""" u"
+            """"""""""""""""""""
+
+STOP viewing my source code :D
+
+ -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flattening Nested Dictionaries, Can Solak's Personal Blog</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/uikit.min.css" />
+    <script src="../js/uikit.min.js"></script>
+    <script src="../js/uikit-icons.min.js"></script>
+
+    <link rel="stylesheet" href="../css/vs2015.css">
+    <link rel="stylesheet" href="../css/embed-gist.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+<body class="uk-background-muted">
+
+    <div class="uk-container uk-background-muted">
+
+        <a href="../blog.html">
+            <h1 class="uk-heading-primary uk-margin-small-top uk-margin-remove-bottom"> <strong>Can</strong>Solak <samp>Personal Blog</samp> </h1>
+        </a>
+        <hr class="uk-divider-icon uk-margin-remove-top">
+
+
+
+        <div class="uk-background-muted">
+
+
+
+
+            <div class="uk-section">
+
+                    <article class="uk-article">
+
+                                <h1 class="uk-article-title uk-text-center">Flattening Nested Dictionaries</h1>
+
+                                <p class="uk-article-meta uk-text-center">28 January 2018
+
+                                <p class="uk-text-lead"> Ever needed to write your own JSON or XML parser? Probably no. There are ready-to-use implementations in almost all programming languages.
+                                                        I also have not think about it till last week. Then, I am asked to implement a method to flatten nested dictionaries. This led me thoughts on
+                                                        possible issues while implementing such parser.
+                                </p>
+
+                                <p>
+
+<script src="https://gist.github.com/AhmetCanSolak/86803a5b0e061a5d2b32d7bebcd74c17.js"></script>
+
+        Last week, I am asked to implement a nested dictionary flattener method in an interview I had. Given a sample input-output dictionary pair,
+        interviewer asked me to implement my solution in language of my choice. I usually implement solutions with C++11 in interviews. I immediately
+        realized that I would need to deal with <code>map&lt;string,void*&gt;</code>. Then I changed the editor to Python and exploit the recurrence
+        and built-in <code>isinstance()</code> method.
+
+
+        <script src="https://gist.github.com/AhmetCanSolak/6f44856f0fd591969761f0c68bc75692.js"></script>
+
+        The implementation above is made by me assuming it is not allowed to manipulate the input dictionary. Otherwise, I would follow a different strategy for
+        this problem. I also added simple corner-case checks during interview to pass all test cases. The <code>flattenDict()</code> directory successfully returns
+        the same result as below.
+
+<script src="https://gist.github.com/AhmetCanSolak/d6b23579ad1f90d3ca14c00660d04b57.js"></script>
+
+        In case you wonder why I immediately change to Python from C++11, the reason is the ease of using <code>isinstance()</code> method instead of dealing dynamic
+        casting of void pointers in C++. There might be a compiler specific solution in C++ for this problem, I might write on it in the following posts. <br>
+        Thank you. <br>
+        <br>
+                                        Please do not hesitate to provide feedback anytime. <br>
+                                        <br>
+                                        See you on forthcoming posts.</p>
+
+                                <div class="uk-grid-small uk-child-width-auto" uk-grid>
+                                    <div>
+                                        <a class=" uk-button-text">Can Solak</a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="../blog.html" ><span class="uk-badge">Return to Homepage</span></a>
+                                </div>
+
+                            </article>
+
+            </div>
+
+
+
+            <div class="uk-child-width-1-6@s uk-grid-small uk-text-center" uk-grid>
+                <div>
+                    <div class="uk-tile uk-tile-primary uk-padding-remove">
+                        <p class="uk-h4"><a class="uk-background-primary uk-light" href="#" uk-totop uk-scroll></a> </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <hr class="uk-divider-icon">
+
+            <center>
+                <h5>Istanbul, 2018</h5>
+            </center>
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

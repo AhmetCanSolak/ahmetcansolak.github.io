@@ -1,0 +1,33 @@
+{
+			"interests" : [
+			{
+				"src" : "img/fractal.jpg",
+				"alt" : "porto1",
+				"name" : "Information Theory"
+			},
+			{
+				"src" : "https://cdn0.iconfinder.com/data/icons/long-shadow-web-icons/512/angular-512.png",
+				"alt" : "porto2",
+				"name" : "Web Development"
+			},
+            {
+				"src" : "http://wavescalar.cs.washington.edu/big-example.png",
+				"alt" : "porto3",
+				"name" : "DataFlow Supercomputing"
+			},
+			{
+				"src" : "img/pexels-photo-25370.jpg",
+				"alt" : "porto4",
+				"name" : "Gypsy Jazz"
+			},
+            {
+				"src" : "http://michaelgr.files.wordpress.com/2008/03/godel-escher-bach-geb.jpg",
+				"alt" : "porto5",
+				"name" : "Philosophy"
+			},
+			{
+				"src" : "http://www.jjay.cuny.edu/sites/default/files/page_icons/shutterstock_137316659%20(1).jpg",
+				"alt" : "porto6",
+				"name" : "Psychology"
+			}]
+}

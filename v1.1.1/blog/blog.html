@@ -1,0 +1,224 @@
+<!--
+
+
+            uuuuuuuuuuuuuuuuuuuu
+          u" uuuuuuuuuuuuuuuuuu "u
+        u" u$$$$$$$$$$$$$$$$$$$$u "u
+      u" u$$$$$$$$$$$$$$$$$$$$$$$$u "u
+    u" u$$$$$$$$$$$$$$$$$$$$$$$$$$$$u "u
+  u" u$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$u "u
+u" u$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$u "u
+$ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ $
+$ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ $
+$ $$$" ... "$...  ...$" ... "$$$  ... "$$$ $
+$ $$$u `"$$$$$$$  $$$  $$$$$  $$  $$$  $$$ $
+$ $$$$$$uu "$$$$  $$$  $$$$$  $$  """ u$$$ $
+$ $$$""$$$  $$$$  $$$u "$$$" u$$  $$$$$$$$ $
+$ $$$$....,$$$$$..$$$$$....,$$$$..$$$$$$$$ $
+$ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ $
+"u "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$" u"
+  "u "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$" u"
+    "u "$$$$$$$$$$$$$$$$$$$$$$$$$$$$" u"
+      "u "$$$$$$$$$$$$$$$$$$$$$$$$" u"
+        "u "$$$$$$$$$$$$$$$$$$$$" u"
+          "u """""""""""""""""" u"
+            """"""""""""""""""""
+
+STOP viewing my source code :D
+
+ -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Can Solak's Personal Blog</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/isotope.js"></script>
+    <script type="text/javascript">
+        function downloadJSAtOnload() {
+            var element = document.createElement("script");
+            element.src = "js/blog.js";
+            document.body.appendChild(element);
+        }
+        if (window.addEventListener)
+            window.addEventListener("load", downloadJSAtOnload, false);
+        else if (window.attachEvent)
+            window.attachEvent("onload", downloadJSAtOnload);
+        else window.onload = downloadJSAtOnload;
+    </script>
+</head>
+
+<body class="uk-background-muted">
+
+    <div class="uk-container uk-background-muted">
+
+        <a href="http://www.cansolak.com/blog/blog.html">
+            <h1 class="uk-heading-primary uk-margin-small-top uk-margin-remove-bottom"> <strong>Can</strong>Solak <samp>Personal Blog</samp> </h1>
+        </a>
+        <hr class="uk-divider-icon uk-margin-remove-top">
+
+        <div class="uk-card uk-card-default uk-card-body uk-width-1-5@m uk-margin-medium-bottom uk-align-right@m">
+            <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+
+                <li class="uk-nav-header">Posts</li>
+
+                <li><a href=""><span class="uk-margin-small-right" uk-icon="icon: table"></span>Categories</a></li>
+
+                <li class="uk-parent">
+                        <a href="#">Programming</a>
+                        <ul class="uk-nav-sub filters-programming">
+                                <a><li data-filter=".algo">Algorithms</li></a>
+                                <a><li data-filter=".cpp">C++</li></a>
+                                <a><li data-filter=".DS">Data Structures</li></a>
+                                <a><li data-filter=".java">Java</li></a>
+                                <a><li data-filter=".py">Python</li></a>
+                                <a><li data-filter=".algo, .cpp, .DS, .java, .py">*All</li></a>
+                        </ul>
+                </li>
+
+                <li class="uk-parent">
+                    <a href="#">Other</a>
+                    <ul class="uk-nav-sub filters-other">
+                        <a><li data-filter=".meta">Meta</li></a>
+                    </ul>
+                </li>
+                <li class="uk-nav-divider"></li>
+                <li><a href=""><span class="uk-margin-small-right" uk-icon="icon: table"></span>Archive</a></li>
+
+                <li class="uk-parent">
+                    <a href="#">2018</a>
+                    <ul class="uk-nav-sub filters-2018">
+                        <a><li data-filter=".Feb18">February</li></a>
+                        <a><li data-filter=".Jan18">January</li></a>
+                    </ul>
+                </li>
+                <li class="uk-parent">
+                    <a href="#">2017</a>
+                    <ul class="uk-nav-sub filters-2017">
+                        <a><li data-filter=".Dec17">December</li></a>
+                    </ul>
+                </li>
+
+                <li class="uk-nav-divider"></li>
+                <li class="filters-all"><a data-filter="*"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> All Posts</a></li>
+            </ul>
+
+        </div>
+
+
+
+        <div class="uk-background-muted">
+            <div class="uk-grid-collapse uk-child-width-expand@s" uk-grid>
+
+                <div class="grid">
+
+                    <!-- <div class="element-item Jan18 algo " style="width:100%;">
+                        <div class="uk-inline-clip uk-transition-toggle " style="width:100%;">
+                            <div class="uk-card uk-card-default uk-card-body uk-margin-small-bottom " >
+                                    <h3 class="uk-card-title uk-margin-small-bottom">Hello World Post </h3>
+                                    <p class="uk-margin-small-top"><i>Meta</i>, <small><em>8th December 2017</em></small> </p>
+                                    <p>Lorem ipsum <a href="#">dolor</a> sit amet,.</p>
+                            </div>
+
+                            <a href="http://www.cansolak.com">
+                                <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
+                                    <p class="uk-h4 uk-margin-remove">Click to read the post...</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div> -->
+                    <div class="element-item Feb18 py " style="width:100%;">
+                        <div class="uk-inline-clip uk-transition-toggle " style="width:100%;">
+                            <div class="uk-card uk-card-default uk-card-body uk-margin-small-bottom " >
+                                    <h3 class="uk-card-title uk-margin-small-bottom">A Small Sunday Game</h3>
+                                    <p class="uk-margin-small-top"><i>Python</i>, <small><em>5th February 2018</em></small> </p>
+                                    <p>Tic-Tac-Toe implementation with Pygame.</p>
+                            </div>
+
+                            <a href="posts/post3.html">
+                                <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
+                                    <p class="uk-h4 uk-margin-remove">Click to read the post...</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="element-item Jan18 py algo" style="width:100%;">
+                        <div class="uk-inline-clip uk-transition-toggle" style="width:100%;">
+                            <div class="uk-card uk-card-default uk-card-body uk-margin-small-bottom">
+                                    <h3 class="uk-card-title uk-margin-small-bottom">Flattening Nested Dictionaries </h3>
+                                    <p class="uk-margin-small-top"><i>Python, Algorithms</i>, <small><em>28th January 2018</em></small> </p>
+                                    <p>A simple Python method to flatten nested dictionaries.</p>
+                            </div>
+
+                            <a href="posts/post2.html">
+                                <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
+                                    <p class="uk-h4 uk-margin-remove">Click to read the post...</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="element-item Dec17 meta " style="width:100%;">
+                            <div class="uk-inline-clip uk-transition-toggle " style="width:100%;">
+                                <div class="uk-card uk-card-default uk-card-body uk-margin-small-bottom">
+                                    <h3 class="uk-card-title uk-margin-small-bottom">Hello World Post </h3>
+                                    <p class="uk-margin-small-top"><i>Meta</i>, <small><em>8th December 2017</em></small> </p>
+                                    <p >My version of standard hello world post.</p>
+                                </div>
+
+                                <a href="posts/post1.html">
+                                    <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
+                                        <p class="uk-h4 uk-margin-remove">Click to read the post...</p>
+                                    </div>
+                                </a>
+                            </div>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+            <div class="uk-child-width-1-6@s uk-grid-small uk-text-center" uk-grid>
+                <div>
+
+                    <div class="uk-tile uk-tile-primary uk-padding-remove">
+                        <p class="uk-h4"><a class="uk-background-primary uk-light" href="#" uk-totop uk-scroll></a> </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <hr class="uk-divider-icon">
+
+            <center>
+                <h5>Istanbul, 2018</h5>
+            </center>
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

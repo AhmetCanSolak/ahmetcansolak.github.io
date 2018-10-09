@@ -1,0 +1,142 @@
+<!--
+
+
+            uuuuuuuuuuuuuuuuuuuu
+          u" uuuuuuuuuuuuuuuuuu "u
+        u" u$$$$$$$$$$$$$$$$$$$$u "u
+      u" u$$$$$$$$$$$$$$$$$$$$$$$$u "u
+    u" u$$$$$$$$$$$$$$$$$$$$$$$$$$$$u "u
+  u" u$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$u "u
+u" u$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$u "u
+$ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ $
+$ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ $
+$ $$$" ... "$...  ...$" ... "$$$  ... "$$$ $
+$ $$$u `"$$$$$$$  $$$  $$$$$  $$  $$$  $$$ $
+$ $$$$$$uu "$$$$  $$$  $$$$$  $$  """ u$$$ $
+$ $$$""$$$  $$$$  $$$u "$$$" u$$  $$$$$$$$ $
+$ $$$$....,$$$$$..$$$$$....,$$$$..$$$$$$$$ $
+$ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ $
+"u "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$" u"
+  "u "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$" u"
+    "u "$$$$$$$$$$$$$$$$$$$$$$$$$$$$" u"
+      "u "$$$$$$$$$$$$$$$$$$$$$$$$" u"
+        "u "$$$$$$$$$$$$$$$$$$$$" u"
+          "u """""""""""""""""" u"
+            """"""""""""""""""""
+
+STOP viewing my source code :D
+
+ -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>A Small Sunday Game, Can Solak's Personal Blog</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/uikit.min.css" />
+    <script src="../js/uikit.min.js"></script>
+    <script src="../js/uikit-icons.min.js"></script>
+
+    <link rel="stylesheet" href="../css/embed-gist.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+<body class="uk-background-muted">
+
+    <div class="uk-container uk-background-muted">
+
+        <a href="../blog.html">
+            <h1 class="uk-heading-primary uk-margin-small-top uk-margin-remove-bottom"> <strong>Can</strong>Solak <samp>Personal Blog</samp> </h1>
+        </a>
+        <hr class="uk-divider-icon uk-margin-remove-top">
+
+
+
+        <div class="uk-background-muted">
+
+
+
+
+            <div class="uk-section">
+
+                    <article class="uk-article">
+
+                                <h1 class="uk-article-title uk-text-center">A Small Sunday Game</h1>
+
+                                <p class="uk-article-meta uk-text-center">5 February 2018
+
+                                <p class="uk-text-lead"> Yesterday was the last day before the new spring semester. After breakfast, I suddenly realized that I have spare time after a long while.
+                                                         My friends were still not around in campus, so I started to looking for a little programming project to make my day more fun. Found a
+                                                         calm place with a nice view and sit. Then, Pygame came to my mind and jumped into implementing a small simple Tic-Tac-Toe game.
+                                </p>
+
+                                <p>
+
+                                <img src="../images/post3-view.jpg" alt="" />
+
+                                I had not used Pygame till yesterday but, thankfully, it is easy to learn and use. With the help of several <a href="https://stackoverflow.com/questions/tagged/pygame">Stack Overflow answers</a> upon simple queries, I was
+                                able to finish a simple 3x3 demo implementation in a couple of hours. In here, I will briefly describe my implementation process. Hope this post can encourage you to implement small games too. First I started with implementing
+                                a slot class to model each cell in the game grid as you can see:
+                                
+                                <script src="https://gist-it.appspot.com/http://github.com/AhmetCanSolak/small-simple-games/blob/master/tic_tac_toe/helperLib.py?slice=121:139&footer=no"></script>
+                                <br>
+                                
+                                Then I go for a simple window and main game loop. You can see its final version as:
+                                <script src="https://gist-it.appspot.com/http://github.com/AhmetCanSolak/small-simple-games/blob/master/tic_tac_toe/main.py?footer=no"></script>
+
+                                <br>
+                                Finally, I implement a board class the handle rest of the functionality. There is only single point in implementation of Board class that I am not comfortable with, it is the check for winning condition. Here you can see my not
+                                so pleasing but quick implementation: 
+                                <script src="https://gist-it.appspot.com/http://github.com/AhmetCanSolak/small-simple-games/blob/master/tic_tac_toe/helperLib.py?slice=38:83&footer=no"></script>
+                                <br>
+
+                                Overall, I enjoyed using Pygame much. Since implementing small simple games is a great way to practise programming, I am planning to have some other games and blog posts on them. <br>
+                                Thank you. <br>
+                                <br>
+                                        Please do not hesitate to provide feedback anytime. <br>
+                                        <br>
+                                        See you on forthcoming posts.</p>
+
+                                <div class="uk-grid-small uk-child-width-auto" uk-grid>
+                                    <div>
+                                        <a class=" uk-button-text">Can Solak</a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="../blog.html" ><span class="uk-badge">Return to Homepage</span></a>
+                                </div>
+
+                            </article>
+
+            </div>
+
+
+
+            <div class="uk-child-width-1-6@s uk-grid-small uk-text-center" uk-grid>
+                <div>
+                    <div class="uk-tile uk-tile-primary uk-padding-remove">
+                        <p class="uk-h4"><a class="uk-background-primary uk-light" href="#" uk-totop uk-scroll></a> </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <hr class="uk-divider-icon">
+
+            <center>
+                <h5>Istanbul, 2018</h5>
+            </center>
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
